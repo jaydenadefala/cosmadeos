@@ -1,0 +1,592 @@
+Overall Layout
+
+The application is divided into three major vertical sections.
+
+┌──────────────────────────────────────────────────────────────┐
+│ Global Navigation (Horizontal Top Bar)                      │
+├──────────────┬───────────────────────────────────────────────┤
+│ Workspace    │ Main Workspace                               │
+│ Navigation   │                                              │
+│ (Left)       │                                              │
+│              │                                              │
+└──────────────┴───────────────────────────────────────────────┘
+
+Everything feels permanent.
+
+Nothing floats.
+
+Nothing overlaps.
+
+Everything occupies a defined region.
+
+This is exactly how enterprise software should feel.
+
+1. Global Navigation Bar (Top)
+
+The very top of the application contains a horizontal company-wide navigation bar.
+
+It stretches the full width.
+
+From left to right:
+
+Company logo (Spark & Co)
+Me
+News Feed
+Tasks
+Locations
+People (currently selected)
+Schedule
+Timesheets
+Reports
+
+Notice something important.
+
+These are business functions, not pages.
+
+Each represents an entire workspace.
+
+Exactly like:
+
+People
+Sales
+Marketing
+Finance
+Operations
+
+for Cosmade OS.
+
+The active tab has:
+
+Light gray background
+Dark text
+Slight emphasis
+
+Not blue.
+
+Not heavily highlighted.
+
+Very subtle.
+
+2. Workspace Sidebar (Left)
+
+This is probably the most important part.
+
+Unlike dashboards that only have menu items,
+
+this sidebar becomes the navigation inside the currently selected workspace.
+
+The width is approximately 260–280 px.
+
+It does not collapse automatically.
+
+Everything aligns to the left.
+
+Very generous spacing.
+
+Sidebar Structure
+
+The sidebar isn't a flat list.
+
+It is divided into sections.
+
+Example:
+
+Team Members
+
+------------------------
+
+ONBOARDING
+
+New Hire Onboarding
+
+------------------------
+
+DOCUMENTS
+
+Team Documents
+
+------------------------
+
+HIRE
+
+Applicants
+
+Interviews
+
+Job Listings
+
+Careers Page
+
+Settings
+
+Notice the hierarchy.
+
+Section
+
+↓
+
+Pages
+
+↓
+
+Subpages
+
+This is exactly how your Departments should work.
+
+Example:
+
+People & HR
+
+Employee Directory
+
+Employee Profiles
+
+Employee Handbook
+
+Training
+
+Benefits
+
+Recruitment
+
+Performance
+
+KPIs
+
+Policies
+
+Documents
+
+Settings
+Sidebar Categories
+
+Each category uses:
+
+Uppercase label
+
+Small size
+
+Medium gray
+
+Large top margin
+
+No border.
+
+Very clean.
+
+Example:
+
+ONBOARDING
+
+DOCUMENTS
+
+HIRE
+
+These are organizational labels rather than clickable items.
+
+Sidebar Items
+
+Each item contains
+
+Small monochrome icon
+
+Text
+
+Comfortable spacing
+
+Approximately 40–48 px height
+
+Very light hover state
+
+No unnecessary decoration.
+
+Active Item
+
+The selected page
+
+"Team Members"
+
+uses
+
+Soft lavender background
+
+Rounded corners
+
+Purple icon
+
+Purple text
+
+Nothing flashy.
+
+No large borders.
+
+No left indicator.
+
+Very elegant.
+
+Icons
+
+Icons are:
+
+Outline style
+
+Consistent weight
+
+Small
+
+Monochrome
+
+Exactly what you want for Cosmade OS.
+
+Main Workspace
+
+Once inside the page,
+
+everything happens in one large workspace.
+
+No cards floating randomly.
+
+Very structured.
+
+Page Header
+
+Large title.
+
+People
+
+Large
+
+Bold
+
+Left aligned.
+
+Below it,
+
+a subtitle.
+
+Showing 77 out of 77 users
+
+Gray.
+
+Small.
+
+Immediately tells the user where they are.
+
+Toolbar
+
+Below the title comes an action toolbar.
+
+Contains
+
+Search
+
+Filters
+
+Display
+
+Bulk Actions
+
+Everything sits on one row.
+
+Search
+
+Filters ▼
+
+Display ▼
+
+Bulk Actions
+
+Very similar to Notion.
+
+Search
+
+Large width.
+
+Left search icon.
+
+Rounded corners.
+
+Neutral border.
+
+No heavy shadow.
+
+Filters
+
+Dropdown button.
+
+Soft background.
+
+Very understated.
+
+Display
+
+Another dropdown.
+
+Controls layout.
+
+Table density.
+
+Columns.
+
+Grouping.
+
+Sorting.
+
+Exactly what enterprise users need.
+
+Bulk Actions
+
+Appears on same row.
+
+Allows acting on multiple records.
+
+Content Area
+
+Main content begins immediately after toolbar.
+
+Large table.
+
+No unnecessary cards.
+
+No dashboard widgets.
+
+Just work.
+
+This is important.
+
+Cosmade OS currently looks too dashboard-heavy.
+
+Instead,
+
+every workspace should primarily become a working environment.
+
+Table Layout
+
+Table columns include
+
+Checkbox
+
+Name
+
+Access
+
+Simple.
+
+Minimal.
+
+Row Structure
+
+Each employee row contains
+
+Checkbox
+
+Avatar
+
+Name
+
+Secondary text
+
+Access level
+
+Large vertical spacing.
+
+Easy to scan.
+
+Avatar
+
+Circular.
+
+40–48 px.
+
+If image unavailable
+
+Uses initials.
+
+Exactly like Slack.
+
+Employee Name
+
+Bold.
+
+Purple.
+
+Clickable.
+
+Indicates this opens profile.
+
+Secondary Text
+
+Under the name
+
+Shows
+
+Invited
+
+Pending
+
+Department
+
+Role
+
+or other metadata.
+
+Smaller.
+
+Gray.
+
+Access Column
+
+Shows
+
+Employee
+
+Admin
+
+Manager
+
+Owner
+
+Simple text.
+
+Not giant badges.
+
+White Space
+
+One of the biggest reasons this UI feels premium.
+
+Large margins.
+
+Large padding.
+
+Nothing crowded.
+
+Nothing compressed.
+
+The interface breathes.
+
+Visual Weight
+
+Notice where emphasis exists.
+
+Large title
+
+↓
+
+Toolbar
+
+↓
+
+Table
+
+Nothing else.
+
+No graphs.
+
+No statistics.
+
+No unnecessary KPI cards.
+
+This is exactly how workspaces should behave.
+
+Dashboards should have analytics.
+
+Workspaces should have tools.
+
+Information Density
+
+Medium density.
+
+Enough information.
+
+Never overwhelming.
+
+Exactly where enterprise software sits.
+
+Typography
+
+Hierarchy is extremely clear.
+
+Page Title
+
+Largest
+
+↓
+
+Section Headings
+
+↓
+
+Table Headers
+
+↓
+
+Primary Text
+
+↓
+
+Secondary Text
+
+↓
+
+Labels
+
+↓
+
+Metadata
+
+You can understand the page within three seconds.
+
+Color Usage
+
+Mostly white.
+
+Very light gray.
+
+Soft purple.
+
+Black text.
+
+Gray metadata.
+
+No saturated colors.
+
+Colors are used only to indicate interaction.
+
+Interaction Philosophy
+
+Everything feels:
+
+Professional
+
+Predictable
+
+Structured
+
+Calm
+
+Purpose-built
+
+This is why it resembles software people use eight hours a day.
+
+How This Should Translate to Cosmade OS
+
+Every primary department should adopt this exact structural pattern rather than the current dashboard-centric layout.
+
+For example, opening People & HR should present a left workspace navigation with grouped sections (Workforce, Recruitment, Learning, Performance, Policies, Settings) and the main content area should always be a productivity page (employee directory, handbook, recruitment pipeline, etc.), not a collection of dashboard cards.
+
+The same applies to every department:
+
+Sales: grouped navigation for Leads, Companies, Contacts, Meetings, Playbooks, Knowledge, Reports, with the main area showing CRM or playbooks rather than KPIs.
+Marketing: grouped navigation for Campaigns, Creative Library, Content Calendar, Brand Assets, Research, Reports.
+Finance: grouped navigation for Revenue, Expenses, Runway, Cash Flow, Budget Planning, Forecasting, Invoices, Bills, Banking, Reports.
+Operations: grouped navigation for SOPs, Procurement, Vendors, Inventory, Compliance, Requests, Audit Logs.
+Knowledge Base: organized like Notion, with sections for handbooks, SOPs, templates, meeting notes, lessons learned, and best practices.
+Training Center: organized like a corporate LMS with learning paths, courses, assessments, certifications, progress, and departmental training.
+
+The overall principle should remain consistent across the entire platform:
+
+A global navigation switches between major company workspaces.
+A workspace sidebar exposes the tools and knowledge within the selected department.
+A main content area is dedicated to executing work.
+Dashboards exist as overview pages, but most pages prioritize knowledge, processes, collaboration, and execution.
+

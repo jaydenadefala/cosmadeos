@@ -1,0 +1,2437 @@
+COSMADE OS
+Official Product Design & System Specification
+VOLUME 1 — FOUNDATION
+Chapter 10
+Enterprise UX Principles, Interaction Standards & Product Quality Framework
+10.0 Introduction
+
+Features alone do not make enterprise software exceptional.
+
+The difference between average enterprise software and world-class enterprise software lies in consistency.
+
+Every click...
+
+Every transition...
+
+Every search...
+
+Every form...
+
+Every table...
+
+Every approval...
+
+Every interaction...
+
+...should behave predictably.
+
+Employees should never need to relearn how the platform works when moving from HR to Finance or from Sales to Operations.
+
+This chapter establishes the interaction language for the entire platform.
+
+Everything implemented after this chapter must follow these standards.
+
+10.1 UX Philosophy
+
+Every screen should optimize for one question:
+
+"How can we help the employee complete meaningful work with the least amount of friction?"
+
+Not:
+
+How can we display more charts?
+
+Not:
+
+How can we impress users?
+
+Instead:
+
+How can we remove unnecessary thinking?
+
+Good enterprise UX reduces cognitive load.
+
+10.2 Five UX Principles
+Principle One
+Speed Over Decoration
+
+Employees use this system every day.
+
+Animations should never delay work.
+
+Navigation should be instant.
+
+Search should feel immediate.
+
+Buttons should respond instantly.
+
+Principle Two
+Context Over Navigation
+
+Never make users open five pages to complete one task.
+
+Instead:
+
+Customer
+
+↓
+
+Contracts
+
+↓
+
+Invoices
+
+↓
+
+Meetings
+
+↓
+
+Timeline
+
+↓
+
+Comments
+
+↓
+
+Tasks
+
+should all exist together.
+
+Principle Three
+Progressive Disclosure
+
+Don't overwhelm users.
+
+Show:
+
+Most important
+
+↓
+
+Important
+
+↓
+
+Advanced
+
+↓
+
+Expert
+
+Hide advanced configuration until requested.
+
+Principle Four
+Consistency
+
+Every object behaves similarly.
+
+Employee
+
+Company
+
+Invoice
+
+Campaign
+
+Knowledge Article
+
+Research Project
+
+Vendor
+
+Customer
+
+Every object uses the same interaction language.
+
+Principle Five
+Confidence
+
+Every interaction should reassure users.
+
+Examples
+
+Saving...
+
+Saved.
+
+Approved.
+
+Invoice sent.
+
+Campaign published.
+
+Automation completed.
+
+Users should never wonder whether something worked.
+
+10.3 Universal Page Anatomy
+
+Every page follows the same hierarchy.
+
+Top Navigation
+
+↓
+
+Workspace Sidebar
+
+↓
+
+Breadcrumbs
+
+↓
+
+Page Header
+
+↓
+
+Context Toolbar
+
+↓
+
+Primary Content
+
+↓
+
+Related Information
+
+↓
+
+Activity Timeline
+
+↓
+
+Footer Actions (if required)
+
+This anatomy never changes.
+
+10.4 Universal Detail Page
+
+Every major business object uses the same layout.
+
+Example
+
+Employee
+
+Customer
+
+Invoice
+
+Vendor
+
+Campaign
+
+Research
+
+Knowledge Article
+
+Contract
+
+SOP
+
+Layout
+
+Header
+
+↓
+
+Overview
+
+↓
+
+Related Information
+
+↓
+
+Documents
+
+↓
+
+Comments
+
+↓
+
+Activity
+
+↓
+
+History
+
+↓
+
+Automation
+
+↓
+
+AI Insights
+
+Users immediately know where to look.
+
+10.5 Object Header Standard
+
+Every object page begins with:
+
+Object Icon
+
+Object Name
+
+Status
+
+Owner
+
+Department
+
+Last Updated
+
+Quick Actions
+
+Share
+
+Favorite
+
+AI Summary
+
+Health Indicator
+
+Relationship Count
+
+Approval Status
+
+This standard applies everywhere.
+
+10.6 Action Placement
+
+Primary Action
+
+Top right.
+
+Examples
+
+Create Employee
+
+New Campaign
+
+Approve Invoice
+
+Secondary Actions
+
+Dropdown.
+
+Never scatter actions randomly.
+
+10.7 Modal vs Drawer Rules
+
+This rule is mandatory.
+
+Use Drawer
+
+Viewing information
+
+Editing simple records
+
+Reading documents
+
+Comments
+
+Preview
+
+History
+
+Relationships
+
+Timeline
+
+Most interactions should use drawers.
+
+Use Modal
+
+Confirmation
+
+Delete
+
+Archive
+
+Approval
+
+Reject
+
+Publish
+
+Password
+
+Authentication
+
+Dangerous actions only.
+
+Use New Page
+
+Complex work.
+
+Examples
+
+Knowledge Editor
+
+Campaign Builder
+
+Research Workspace
+
+Workflow Builder
+
+Report Designer
+
+Document Editor
+
+Never force complex work into a modal.
+
+10.8 Multi-Step Wizard Pattern
+
+Long workflows use guided steps.
+
+Example
+
+Employee Onboarding
+
+Step 1
+
+Personal Details
+
+↓
+
+Employment
+
+↓
+
+Documents
+
+↓
+
+Benefits
+
+↓
+
+Equipment
+
+↓
+
+Training
+
+↓
+
+Review
+
+↓
+
+Complete
+
+Every wizard supports:
+
+Save Draft
+
+Back
+
+Forward
+
+Exit
+
+Resume Later
+
+Progress Indicator
+
+Validation
+
+10.9 Universal Toolbar
+
+Every operational page has a toolbar.
+
+Contains
+
+Search
+
+Filters
+
+Saved Views
+
+Sort
+
+Group
+
+Columns
+
+Density
+
+Export
+
+Import
+
+Refresh
+
+Create
+
+Bulk Actions
+
+Never remove these capabilities from enterprise tables.
+
+10.10 Bulk Actions
+
+Bulk actions should exist everywhere.
+
+Examples
+
+Assign
+
+Delete
+
+Archive
+
+Export
+
+Approve
+
+Reject
+
+Share
+
+Move
+
+Tag
+
+Change Owner
+
+Generate Report
+
+Run AI
+
+Bulk operations save enormous time.
+
+10.11 Filtering Standards
+
+Every list supports:
+
+Quick Filter
+
+Advanced Filter
+
+Saved Filter
+
+Department Filter
+
+Date Filter
+
+Owner Filter
+
+Status Filter
+
+Tag Filter
+
+Branch Filter
+
+Search + Filters should always work together.
+
+10.12 Saved Views
+
+Every user can save personalized views.
+
+Example
+
+"My Lagos Hospitals"
+
+"My Pending Approvals"
+
+"Quarterly Marketing Campaigns"
+
+"My Team"
+
+Views are private by default but may be shared.
+
+10.13 Keyboard Navigation
+
+Every major workflow supports keyboard shortcuts.
+
+Examples
+
+Ctrl + K
+
+Global Search
+
+N
+
+Create New
+
+/
+
+Focus Search
+
+Esc
+
+Close Drawer
+
+Ctrl + S
+
+Save
+
+Arrow Keys
+
+Navigate Tables
+
+Shift + Click
+
+Multi-select
+
+Tab
+
+Next Field
+
+Power users should operate without touching the mouse whenever practical.
+
+10.14 Drag & Drop
+
+Supported in:
+
+Knowledge Base
+
+Documents
+
+Kanban
+
+Workflow Builder
+
+Training Builder
+
+Dashboards
+
+Media Library
+
+Campaign Builder
+
+Not every screen should support drag-and-drop.
+
+Only where it improves productivity.
+
+10.15 Undo Philosophy
+
+Whenever safe:
+
+Never delete immediately.
+
+Instead
+
+Archive
+
+↓
+
+Undo
+
+↓
+
+Delete Permanently
+
+Support undo for:
+
+Assignment
+
+Move
+
+Tag
+
+Upload
+
+Delete
+
+Status Change
+
+This reduces user anxiety.
+
+10.16 Empty States
+
+Every empty page teaches users.
+
+Instead of
+
+"No Records"
+
+Display
+
+Explanation
+
+Benefits
+
+Quick Start Guide
+
+Import
+
+Templates
+
+AI Suggestions
+
+Create Button
+
+Example
+
+No Campaigns Yet
+
+↓
+
+Create Campaign
+
+Import Campaign
+
+View Examples
+
+Watch Tutorial
+
+Generate with AI
+
+10.17 Loading Experience
+
+Loading should feel intelligent.
+
+Skeleton UI
+
+↓
+
+Progressive Loading
+
+↓
+
+Lazy Loading
+
+↓
+
+Streaming Data
+
+↓
+
+Background Refresh
+
+Never freeze the interface.
+
+10.18 Error Experience
+
+Errors should be human.
+
+Bad
+
+Error 500
+
+Good
+
+"We couldn't publish the campaign because approval is still pending."
+
+Offer
+
+Retry
+
+View Details
+
+Contact Support
+
+Report Issue
+
+10.19 Offline Experience
+
+If connection drops:
+
+Warn user.
+
+Continue editing where possible.
+
+Queue supported actions.
+
+Auto-sync on reconnect.
+
+Display sync status clearly.
+
+10.20 AI Interaction Standards
+
+AI should never interrupt work.
+
+AI appears as:
+
+Suggestions
+
+Summaries
+
+Recommendations
+
+Insights
+
+Drafts
+
+Predictions
+
+Users remain in control.
+
+Every AI-generated action is clearly labeled.
+
+10.21 Performance Standards
+
+Performance is a product feature.
+
+Target expectations:
+
+Initial application shell loads quickly on standard broadband.
+Page transitions feel instantaneous where data is already available.
+Search returns responsive incremental results.
+Large datasets use virtualization, pagination, or progressive loading.
+Background synchronization should not block interaction.
+
+Performance budgets should be defined and monitored during implementation.
+
+10.22 Accessibility Interaction Standards
+
+Every interaction must be usable with:
+
+Keyboard only.
+Screen readers.
+High zoom levels.
+Reduced motion preferences.
+High-contrast themes (future).
+
+Focus order must be logical and visible.
+
+No interaction should depend solely on color.
+
+10.23 Enterprise Quality Checklist
+
+Every feature is reviewed against the following checklist before release:
+
+User Experience
+Is the workflow intuitive?
+Is terminology consistent?
+Are primary actions obvious?
+Can common tasks be completed efficiently?
+Design
+Uses approved design tokens.
+Uses shared components.
+Matches workspace identity.
+Responsive across supported devices.
+Accessibility
+Keyboard accessible.
+Screen-reader friendly.
+Color contrast compliant.
+Error messaging accessible.
+Performance
+Meets performance budgets.
+Handles large datasets.
+Optimizes network usage.
+Avoids unnecessary re-renders.
+Security
+Permission-aware.
+Audit logging implemented.
+Sensitive data protected.
+Export permissions respected.
+Reliability
+Handles loading states.
+Handles empty states.
+Handles error states.
+Handles offline scenarios where applicable.
+Intelligence
+Search indexing configured.
+AI integration evaluated.
+Relationships established.
+Activity timeline enabled.
+
+No feature is considered complete until it passes every applicable section of this checklist.
+
+10.24 Product Evolution Strategy
+
+Cosmade OS should evolve through controlled, backwards-compatible improvements.
+
+Guidelines:
+
+New modules must integrate with existing navigation and object models.
+Existing workflows should not be broken by new features.
+Deprecated features should remain supported through defined migration periods.
+New AI capabilities should enhance existing workflows rather than replacing them abruptly.
+Every release should include usability improvements, not just new functionality.
+10.25 Product Principles for Every Future Decision
+
+Before implementing any new feature, the product team should ask:
+
+Does this reduce or increase cognitive load?
+Does it strengthen the organization's knowledge?
+Does it integrate with existing business objects?
+Does it respect permissions and security?
+Can it be discovered through search?
+Can it participate in automation?
+Is it auditable?
+Is it accessible?
+Does it work responsively?
+Will it still make sense when the platform is ten times larger?
+
+If the answer to any of these is "no," the feature should be redesigned before implementation.
+
+End of Volume 1 — Foundation
+Architectural Review
+
+At this point, we have established:
+
+Product vision and philosophy.
+Organizational model.
+Information architecture.
+Navigation blueprint.
+Global layout system.
+Enterprise design system.
+Roles, permissions, and security.
+Shared platform services.
+Canonical business object model.
+Knowledge graph and data architecture.
+UX principles and product quality standards.
+
+This foundation is intentionally technology-agnostic. It defines what Cosmade OS is and how it should behave, independent of implementation details.
+
+Before Volume 2
+
+I recommend one refinement to the roadmap.
+
+Rather than beginning immediately with dashboards, Volume 2 should start with the App Shell—the persistent frame that every user lives inside.
+
+That includes:
+
+Authentication experience.
+Organization selector.
+Workspace switcher.
+Global navigation.
+Sidebar behavior.
+Command palette.
+Notification center.
+AI assistant panel.
+User profile menu.
+Global search experience.
+Favorites and recents.
+Quick-create flows.
+
+Only after the App Shell is fully specified should we design the Dashboard. This mirrors how mature products such as Notion, Linear, Slack, and Microsoft 365 are designed: the shell is the foundation that every workspace inherits.
+
+I believe this adjustment will make the remaining nine volumes significantly more consistent and easier to implement.
+
+Excellent. This is the point where enterprise software companies typically stop writing product vision documents and begin producing engineering specifications.
+
+Everything we've written so far describes what Cosmade OS should become.
+
+The next documents describe exactly how it will be built.
+
+This becomes the implementation blueprint.
+
+IMPLEMENTATION SERIES
+Volume 1
+Enterprise Information Architecture (IA)
+Vision
+
+Every employee should know exactly where to go.
+
+Nothing should feel hidden.
+
+Nothing should require more than three clicks.
+
+Navigation should be predictable.
+
+Every workspace should behave consistently.
+
+Every object should feel familiar regardless of department.
+
+The platform should feel like one unified operating system.
+
+Enterprise Navigation Principles
+
+The navigation must satisfy six principles.
+
+Principle 1 — Workspace-Based Navigation
+
+The platform is organized into workspaces rather than isolated modules.
+
+Each workspace owns its own dashboards, objects, analytics, documents, AI assistant, automation, and settings.
+
+Principle 2 — Universal Object Model
+
+Every major object uses the same structure.
+
+Examples
+
+Customer
+
+Employee
+
+Vendor
+
+Campaign
+
+Research Project
+
+Document
+
+Equipment
+
+Invoice
+
+Contract
+
+Supplier
+
+Every object page contains
+
+Overview
+
+Activity
+
+Relationships
+
+Documents
+
+Knowledge
+
+Tasks
+
+Timeline
+
+Analytics
+
+AI Assistant
+
+History
+
+Settings (where applicable)
+
+Users immediately know where information lives.
+
+Principle 3 — Global Search First
+
+Navigation should never be the fastest way.
+
+Search should be.
+
+Press
+
+Ctrl + K
+
+or
+
+⌘K
+
+Search anything.
+
+Employees.
+
+Hospitals.
+
+Invoices.
+
+Projects.
+
+Products.
+
+Research.
+
+Documents.
+
+Workflows.
+
+Knowledge.
+
+Everything searchable.
+
+Principle 4 — Contextual Navigation
+
+Navigation changes based on where users are.
+
+Example
+
+Customer Workspace
+
+Sidebar changes to
+
+Overview
+
+Contacts
+
+Equipment
+
+Projects
+
+Support
+
+Training
+
+Documents
+
+Contracts
+
+Meetings
+
+Knowledge
+
+Analytics
+
+AI
+
+The global navigation remains stable while the local navigation adapts.
+
+Principle 5 — Progressive Disclosure
+
+Do not overwhelm users.
+
+Show only what is relevant.
+
+Advanced tools remain available but do not clutter the interface.
+
+Principle 6 — Consistency
+
+Every page follows the same design language.
+
+Header
+
+↓
+
+Actions
+
+↓
+
+Filters
+
+↓
+
+Primary Content
+
+↓
+
+Details Panel
+
+↓
+
+AI Panel
+
+↓
+
+Timeline
+
+↓
+
+Footer Actions
+
+Users should never need to relearn the interface.
+
+Global Navigation Architecture
+
+The left navigation becomes the permanent backbone of the platform.
+
+Dashboard
+
+People & HR
+
+Sales
+
+Marketing
+
+Research & Development
+
+Operations
+
+Finance
+
+Documents
+
+Knowledge Base
+
+Training Center
+
+Customers
+
+Analytics
+
+Administration
+
+Nothing else belongs in the first level.
+
+Global Header
+
+Contains
+
+Global Search
+
+Quick Create
+
+Notifications
+
+Approvals
+
+Tasks
+
+Calendar
+
+AI Command Center
+
+Bookmarks
+
+Recently Viewed
+
+Help
+
+Profile
+
+Workspace Switcher
+
+Company Switcher (Multi-company)
+
+Global Footer
+
+Contains
+
+Platform Status
+
+Version
+
+Environment
+
+Support
+
+Keyboard Shortcuts
+
+Accessibility
+
+Privacy
+
+Terms
+
+Workspace Anatomy
+
+Every workspace shares one layout.
+
+Workspace Header
+
+↓
+
+Workspace KPIs
+
+↓
+
+Toolbar
+
+↓
+
+Workspace Tabs
+
+↓
+
+Main Content
+
+↓
+
+AI Assistant
+
+↓
+
+Timeline
+
+↓
+
+Related Objects
+
+This pattern repeats everywhere.
+
+Universal Workspace Components
+
+Every workspace includes
+
+Dashboard
+
+List View
+
+Board View
+
+Calendar View
+
+Timeline View
+
+Graph View
+
+Analytics View
+
+Knowledge View
+
+Automation View
+
+Settings
+
+Not every object uses every view, but the pattern remains consistent.
+
+Universal Object Layout
+
+Every major entity opens as a full-page workspace.
+
+Never a cramped modal.
+
+Structure:
+
+Header
+- Name
+- Status
+- Tags
+- Primary Actions
+
+↓
+
+Summary Cards
+
+↓
+
+Tabs
+
+Overview
+
+Activity
+
+Relationships
+
+Documents
+
+Knowledge
+
+Tasks
+
+Timeline
+
+Analytics
+
+AI
+
+History
+
+This applies to:
+
+Customer
+Employee
+Product
+Vendor
+Campaign
+Research Project
+Warehouse
+Equipment
+Contract
+Invoice
+Asset
+Training Course
+SOP
+Knowledge Article
+Global AI Experience
+
+AI is not hidden in a chat window.
+
+It exists everywhere.
+
+Every workspace includes a contextual AI panel that understands:
+
+Current page.
+Current user.
+Current permissions.
+Related records.
+Relevant documents.
+Knowledge graph.
+Active workflows.
+
+Examples:
+
+On a customer page:
+
+Summarize this account.
+Draft a renewal strategy.
+Show expansion opportunities.
+
+On a finance page:
+
+Explain cash flow changes.
+Predict runway.
+Highlight budget risks.
+
+On an engineering page:
+
+Recommend troubleshooting steps.
+Find similar repair cases.
+Global Command Palette
+
+Available from any screen.
+
+Supports:
+
+Navigate
+
+Create
+
+Search
+
+Run Workflow
+
+Generate AI Summary
+
+Start Meeting
+
+Open Customer
+
+Open Employee
+
+Create Purchase Order
+
+Create Campaign
+
+Open Knowledge Article
+
+Generate Report
+
+Everything from one interface.
+
+Cross-Workspace Linking
+
+Every object is linked.
+
+Example:
+
+Customer
+
+↓
+
+Products
+
+↓
+
+Installations
+
+↓
+
+Engineers
+
+↓
+
+Contracts
+
+↓
+
+Invoices
+
+↓
+
+Payments
+
+↓
+
+Training
+
+↓
+
+Support
+
+↓
+
+Knowledge
+
+↓
+
+Research
+
+↓
+
+Marketing Campaigns
+
+↓
+
+AI Insights
+
+Users never feel trapped inside one module.
+
+Responsive Information Architecture
+Desktop (1440px+)
+
+Three-column layout:
+
+Global sidebar.
+Main workspace.
+Context/AI panel.
+Tablet
+
+Collapsible sidebar.
+
+AI panel becomes a slide-over drawer.
+
+Responsive tables collapse into cards where appropriate.
+
+Mobile
+
+Bottom navigation for primary workspaces.
+
+Context actions become floating action buttons.
+
+Lists become stacked cards.
+
+Filters become bottom sheets.
+
+Tables convert to mobile-optimized views.
+
+No horizontal scrolling except for analytical grids where unavoidable.
+
+Navigation Depth Rules
+
+Maximum navigation depth:
+
+Level 1 — Workspace.
+
+Level 2 — Section.
+
+Level 3 — Object.
+
+Level 4 — Details.
+
+Never exceed four levels.
+
+Breadcrumbs always visible.
+
+Universal States
+
+Every screen defines:
+
+Empty State
+
+Loading State
+
+Skeleton Loading
+
+Partial Loading
+
+Offline State
+
+Sync Pending
+
+Permission Denied
+
+Error State
+
+Archived State
+
+Deleted State
+
+Read Only
+
+Maintenance Mode
+
+Every state has a defined visual treatment and user action.
+
+Cross-Cutting UX Standards
+
+Every page supports:
+
+Keyboard navigation.
+
+Accessibility (WCAG 2.2 AA).
+
+Dark mode.
+
+Light mode.
+
+Localization.
+
+RTL readiness.
+
+High-density mode.
+
+Touch interactions.
+
+Offline caching where applicable.
+
+Autosave for editable content.
+
+Undo for destructive actions.
+
+Audit trail access where permitted.
+
+Platform Interaction Model
+
+The entire platform should feel like:
+
+Notion for knowledge organization.
+Linear for speed and navigation.
+Rippling for operational workflows.
+HubSpot for CRM and commercial execution.
+Confluence for documentation.
+Superhuman for keyboard-first productivity.
+Palantir Foundry for connected operational intelligence.
+
+Not by copying their visual styles, but by adopting their interaction patterns and productivity principles.
+
+IMPLEMENTATION SERIES STATUS
+
+This completes Volume 1: Enterprise Information Architecture.
+
+The remaining implementation volumes should be:
+
+Volume 2 — Complete Database Blueprint (every entity, relationship, indexes, constraints, audit strategy, versioning, multi-tenancy).
+Volume 3 — Backend & Microservice Architecture (service boundaries, APIs, event contracts, queues, caching, authentication, deployment).
+Volume 4 — Frontend Engineering Specification (design system implementation, component architecture, routing, state management, responsiveness, accessibility).
+Volume 5 — Master Execution Roadmap (10 Lovable implementation phases, backend milestones, QA, security hardening, production rollout, monitoring, and future expansion).
+
+These five implementation volumes will convert the enterprise blueprint into a production-ready engineering specification that can be executed systematically by Lovable, backend engineers, designers, and QA teams. I recommend building them in this order, as each depends on the one before it.
+
+This is the first prompt I’ll send to Claude before I attach the long conversation we’ve had. I might send the link or copy and paste all we’ve talked about. In case I send the link. Tell it to start reading from the part you started work on Volume 1 (the one on the foundation). Tell me the best to use- copy and paste or link(and check if it’ll actually read the link). 
+
+Now I need to send a prompt to Claude to help me organize everything into the documents and volumes. I’ll copy most of these chat, including what I sent to you and your recommendations to save work that’ll take days (so it should include things like continue or the recommendations you give at the end of the documents, etc). Once it has done everything, we’ll also tell it to create four extra files
+Agents.md, context.md, memory.md, skills.md
+
+Agents.md- What we give an employee to onboard them- the voice, and how we like to work. Claude referenced this everytime before doing its work
+
+Context.md-Heavy and more nuance information
+
+memory.md - everything I tell it as we go further and it continuously update this as it learns about you
+
+Skills.md- work through a process once and it packages it as a reusable flow
+
+And one additional document CLAUDE.md
+
+I would not use a conversation link.
+
+Claude cannot reliably read ChatGPT conversation links. Unless the conversation is exported as a publicly accessible page that Claude can fetch (and even then it's inconsistent), you should assume it won't have access. It also won't preserve the conversational context the way you expect.
+
+Best approach (ranked)
+1. Best (Recommended)
+
+Copy and paste the conversation into Claude in chunks.
+
+This is the most reliable because:
+
+Claude sees every detail.
+Nothing is lost due to permissions.
+You control exactly what it receives.
+It can reference everything while building the documentation.
+
+Since your documentation is becoming enormous, I'd organize it like this:
+
+Message 1
+MASTER PROMPT
+
+Message 2
+Architecture Discussion Part 1
+
+Message 3
+Architecture Discussion Part 2
+
+...
+
+Message N
+Volume 1
+
+...
+
+Final Message
+BEGIN ORGANIZATION
+
+This is how I would do it.
+
+2. Second Best
+
+Export the conversation as Markdown or PDF and upload it.
+
+This is actually cleaner than pasting hundreds of messages.
+
+Claude can read uploaded markdown/text files extremely well.
+
+3. Not Recommended
+
+Sending a ChatGPT share link.
+
+I would not rely on it.
+
+What I would tell Claude
+
+I would give Claude a very explicit job.
+
+Something like this:
+
+MASTER SYSTEM PROMPT
+
+You are now the Documentation Architect and Knowledge Engineer for the Cosmade OS project.
+
+You are NOT designing the product from scratch.
+
+The architecture has already been designed.
+
+Your responsibility is to organize, refine, expand and structure it into enterprise-grade documentation.
+
+Treat every architectural decision already made as the source of truth unless I explicitly tell you otherwise.
+
+Never simplify the architecture.
+
+Never remove functionality.
+
+Never shorten sections for convenience.
+
+Your job is to increase clarity, consistency, quality and implementation readiness.
+
+Source Material
+
+After this message I will paste a very long conversation.
+
+The conversation contains:
+
+Product vision
+Design philosophy
+Department architectures
+Enterprise architecture
+AI architecture
+Platform architecture
+Executive recommendations
+Future roadmap
+Implementation recommendations
+Decisions made over many days
+
+Nothing inside those conversations should be ignored.
+
+Even recommendations written at the end of sections should be preserved because they often become future chapters.
+
+Do not discard them.
+
+If I send multiple messages
+
+Assume they are one continuous document.
+
+Do not begin processing until I explicitly write:
+
+END OF SOURCE MATERIAL
+
+Only after receiving that message should you begin analysis.
+
+If I upload files
+
+Treat uploaded files as newer versions of the architecture.
+
+Merge them intelligently.
+
+Never overwrite information unless it conflicts.
+
+If there is a conflict,
+
+ask me.
+
+Very Important
+
+If I provide ChatGPT conversations,
+
+they contain conversational messages like
+
+Continue
+
+Go ahead
+
+I agree
+
+Proceed
+
+Those messages are NOT documentation.
+
+However,
+
+the responses following them ARE documentation.
+
+Extract the useful architectural information.
+
+Ignore conversational filler.
+
+Preserve recommendations.
+
+Preserve implementation notes.
+
+Preserve future work.
+
+Preserve architectural rationale.
+
+Where to Start
+
+The earlier part of the conversation contains brainstorming.
+
+Do NOT spend time organizing those sections.
+
+Begin your work from the point where the documentation formally starts.
+
+That point is:
+
+IMPLEMENTATION SERIES
+
+Volume 1
+
+Enterprise Information Architecture (IA)
+
+Everything before that should still be retained as supporting context, but the implementation documentation starts there.
+
+If earlier books (HR OS, Sales OS, Finance OS, Customer OS, etc.) are included in the conversation, organize them into their own volumes before Volume 1 of the Implementation Series.
+
+Documentation Standards
+
+Every document must include
+
+Title
+Purpose
+Vision
+Philosophy
+Architecture
+Principles
+Components
+User Flows
+Information Architecture
+Data Model (where applicable)
+Permissions
+AI Capabilities
+Automation
+Integrations
+Analytics
+Administration
+Security
+UX Notes
+Future Expansion
+
+Everything should follow the same structure.
+
+Output Structure
+
+Organize everything into a documentation repository.
+
+Create folders like:
+
+/00 Executive Summary
+
+/01 Vision
+
+/02 Product Philosophy
+
+/03 Design Principles
+
+/04 Enterprise Architecture
+
+/05 Department Operating Systems
+
+    HR
+
+    Sales
+
+    Marketing
+
+    Finance
+
+    Operations
+
+    Customers
+
+    Knowledge
+
+    Training
+
+    Research
+
+/06 Platform Core
+
+/07 Enterprise AI
+
+/08 Data Platform
+
+/09 Security
+
+/10 Integrations
+
+/11 UX System
+
+/12 Implementation
+
+/13 Roadmaps
+
+/14 Future Ideas
+
+Do not produce one giant document.
+
+Produce multiple focused documents.
+
+Everything should cross-reference related documents.
+
+Documentation Quality
+
+Think like
+
+Microsoft
+
+Atlassian
+
+Stripe
+
+AWS
+
+Google Cloud
+
+Palantir
+
+ServiceNow
+
+Linear
+
+Notion
+
+Documentation should be enterprise-grade.
+
+Your Responsibilities
+
+As you organize the documents:
+
+Remove duplicate sections.
+Merge overlapping ideas.
+Standardize terminology.
+Improve naming consistency.
+Create internal references.
+Generate tables of contents.
+Identify missing sections.
+Suggest improvements.
+Never lose information.
+
+Your goal is to transform this into documentation suitable for a world-class software engineering organization.
+
+Additional Files
+
+After organizing the documentation, create the following foundational files.
+
+1. CLAUDE.md
+
+This is the primary operating manual for every future Claude session.
+
+It should contain:
+
+Project vision.
+Product philosophy.
+Non-negotiable principles.
+Documentation standards.
+Coding philosophy.
+UI philosophy.
+AI philosophy.
+Architecture principles.
+Decision-making framework.
+Response style.
+Implementation rules.
+Naming conventions.
+Folder conventions.
+Development workflow.
+Phase-based execution rules.
+Rules for proposing architectural changes.
+
+Claude should read this before doing any work.
+
+2. AGENTS.md
+
+This is the onboarding manual for every AI agent or contributor joining the project.
+
+Include:
+
+Mission.
+Company culture.
+Engineering principles.
+Design philosophy.
+Quality standards.
+Documentation standards.
+Code review checklist.
+Security principles.
+UX expectations.
+Collaboration workflow.
+Communication style.
+Definition of Done.
+Escalation rules.
+Responsibilities for each specialized AI role (Architect, Designer, Backend Engineer, Frontend Engineer, QA, Documentation Engineer, Product Manager, etc.).
+
+Claude should use this as its behavioral guide.
+
+3. CONTEXT.md
+
+This is the project's long-term context file.
+
+It should include:
+
+Product history.
+Why Cosmade OS exists.
+Business goals.
+Long-term roadmap.
+Domain knowledge.
+Healthcare context.
+Medical equipment industry knowledge.
+Competitive positioning.
+Important architectural decisions.
+Assumptions.
+Constraints.
+Future ambitions.
+
+This file captures nuance that doesn't belong in specifications.
+
+4. MEMORY.md
+
+This is a continuously evolving memory file.
+
+It should record durable project knowledge learned over time, such as:
+
+Architectural decisions.
+Naming conventions.
+Preferred patterns.
+Rejected approaches (with reasons).
+Recurring preferences.
+Technical standards.
+UI conventions.
+Business rules.
+Lessons learned.
+
+Claude should update this file whenever new long-term decisions are made, but should not store temporary implementation details.
+
+5. SKILLS.md
+
+This file should function as a reusable process library.
+
+Whenever a workflow is refined and proven successful, convert it into a reusable skill.
+
+Each skill should include:
+
+Name.
+Purpose.
+When to use it.
+Inputs.
+Outputs.
+Step-by-step process.
+Quality checklist.
+Common mistakes.
+Related documents.
+
+Examples include:
+
+Creating a new workspace.
+Designing a dashboard.
+Building an AI agent.
+Writing an enterprise specification.
+Creating a workflow.
+Reviewing UX.
+Planning an implementation phase.
+Performing an architecture review.
+
+Over time, this becomes the organization's standardized playbook for recurring work.
+
+Developer Preview Toolbar (Development Mode Only)
+Purpose
+
+During development, designers and developers need to quickly verify every workspace without repeatedly navigating through the application.
+
+A development toolbar shall be available in development mode only (NODE_ENV=development or feature flag).
+
+It must never appear in production.
+
+Placement
+
+Position the toolbar in the top-right corner of the global navigation bar, immediately before the notification bell and user profile.
+
+--------------------------------------------------------------
+Search...
+
+[Department ▼]
+
+[Screen ▼]
+
+[Role ▼]
+
+[Theme]
+
+[Viewport]
+
+Notifications
+
+User
+
+It should look like native UI, not like a debug panel.
+
+Department Switcher
+
+The first dropdown changes the active department instantly.
+
+Example:
+
+Department
+
+Dashboard
+
+People & HR
+
+Sales
+
+Marketing
+
+Research & Development
+
+Operations
+
+Finance
+
+Documents
+
+Knowledge Base
+
+Training Center
+
+Customers
+
+Reports
+
+Administration
+
+Selecting a department immediately loads its default landing page.
+
+Example:
+
+Sales
+
+↓
+
+Sales Dashboard
+
+Marketing
+
+↓
+
+Marketing Dashboard
+
+Knowledge Base
+
+↓
+
+Knowledge Home
+
+Screen Switcher
+
+The second dropdown switches directly to any screen within the selected department.
+
+Example:
+
+People & HR
+
+Employee Directory
+
+Employee Profile
+
+Recruitment
+
+Performance Reviews
+
+Benefits
+
+Training
+
+Policies
+
+Employee Handbook
+
+Settings
+
+Switching screens should not require navigating through menus.
+
+Role Switcher
+
+Developers must preview permissions.
+
+Example:
+
+Owner
+
+Administrator
+
+Finance Manager
+
+HR Manager
+
+Sales Manager
+
+Marketing Manager
+
+Operations Manager
+
+Department Lead
+
+Manager
+
+Supervisor
+
+Employee
+
+Guest
+
+External Partner
+
+Vendor
+
+Customer
+
+Changing role immediately refreshes:
+
+Visible menus
+
+Buttons
+
+Permissions
+
+Actions
+
+Tables
+
+Widgets
+
+Empty states
+
+Restricted pages
+
+Company Switcher (Optional but Recommended)
+
+Since CosDash is multi-company, developers should be able to switch companies instantly.
+
+Company
+
+Cosmade Medical
+
+Acme Ltd
+
+Demo Company
+
+Enterprise Sandbox
+
+This makes testing significantly easier.
+
+Theme Switcher
+Light
+
+Dark
+
+System
+
+Should instantly update the interface.
+
+Viewport Simulator
+
+Instead of constantly resizing the browser, provide presets.
+
+Desktop XL
+
+Desktop
+
+Laptop
+
+Tablet Landscape
+
+Tablet Portrait
+
+Mobile Large
+
+Mobile Small
+
+Changing viewport should resize the application container to simulate that screen size while remaining in the browser.
+
+Density Switcher
+
+Useful for enterprise customers.
+
+Comfortable
+
+Compact
+
+Dense
+
+Updates:
+
+Table row height
+
+Sidebar spacing
+
+Card spacing
+
+Margins
+
+Language Switcher
+English
+
+French
+
+Arabic
+
+Chinese
+
+Spanish
+
+Used to verify localization and RTL layouts.
+
+Permission Overlay
+
+Optional toggle.
+
+When enabled:
+
+Every hidden button displays:
+
+Hidden
+
+Requires Finance Manager
+
+Instead of disappearing.
+
+Very useful for QA.
+
+Grid Overlay
+
+Optional.
+
+Displays:
+
+8 px spacing grid
+
+Layout columns
+
+Responsive breakpoints
+
+Safe areas
+
+Useful for designers.
+
+Component Inspector
+
+When enabled:
+
+Hovering a component shows:
+
+Employee Table
+
+Component
+
+employee-table-v2
+
+Status
+
+Connected
+
+Data Source
+
+employees
+
+Permission
+
+HR_VIEW
+
+Extremely useful during development.
+
+Sample Data Switcher
+
+Developers should instantly load different datasets.
+
+Examples:
+
+Small Company
+
+50 Employees
+
+Medium Company
+
+250 Employees
+
+Enterprise
+
+5,000 Employees
+
+Healthcare Company
+
+Manufacturing Company
+
+Empty Company
+
+Stress Test
+
+Every screen updates accordingly.
+
+Workflow State Switcher
+
+Allows developers to preview different process states.
+
+Example:
+
+Recruitment
+
+No Applicants
+
+50 Applicants
+
+Hiring
+
+Offer Sent
+
+Rejected
+
+Archived
+
+Finance
+
+Positive Cash Flow
+
+Negative Cash Flow
+
+Budget Exceeded
+
+Runway Warning
+
+
+CRM
+
+Healthy Pipeline
+
+Empty Pipeline
+
+Enterprise Deals
+
+Lost Quarter
+
+Notification Generator
+
+Generate test notifications.
+
+Success
+
+Error
+
+Warning
+
+Information
+
+Approval Request
+
+Mention
+
+Reminder
+Responsive Testing
+
+This is mandatory for the project.
+
+Every page must be tested in:
+
+1920px+
+1600px
+1440px
+1366px
+1280px
+1024px
+820px
+768px
+540px
+430px
+390px
+375px
+360px
+320px
+
+At every breakpoint, ensure:
+
+No horizontal scrolling.
+No clipped content.
+No overflowing text.
+No overlapping components.
+Tables adapt (collapse, horizontal scroll with sticky columns, or card layout as appropriate).
+Sidebars become drawers on smaller screens.
+Headers remain usable.
+Buttons remain reachable.
+All forms remain accessible.
+Dialogs fit within the viewport.
+
+This developer preview system will make building CosDash dramatically faster. Instead of manually drilling into navigation to inspect each department, a developer can switch between departments, screens, user roles, datasets, workflow states, and device sizes in seconds. It's the kind of internal tooling used on large enterprise products because it shortens feedback loops and improves QA coverage without affecting the production application.

@@ -1,0 +1,156 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  /* Cosmade OS design tokens — see 11 UX System/design-system-teardown.md */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.2 0.01 292);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2 0.01 292);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2 0.01 292);
+  --primary: oklch(0.48 0.14 293);
+  --primary-foreground: oklch(0.98 0.005 292);
+  --secondary: oklch(0.97 0.003 292);
+  --secondary-foreground: oklch(0.28 0.02 293);
+  --muted: oklch(0.97 0.003 292);
+  --muted-foreground: oklch(0.556 0.01 292);
+  --accent: oklch(0.94 0.025 296);
+  --accent-foreground: oklch(0.42 0.14 293);
+  /* Darkened from 0.577 — that value gave text-destructive a ~4.0:1 contrast
+     ratio against its own bg-destructive/10 badge tint (fails WCAG 2.2 AA's
+     4.5:1 for normal text; verified live via canvas-based pixel measurement
+     during the Phase 10 accessibility audit). 0.46 keeps the same hue/chroma
+     but passes at ~5.5:1 against the badge tint and ~6.9:1 against plain
+     white ("Delete permanently" links etc.), with no dark-mode change needed
+     (dark-mode --destructive already passes at 6.02:1). */
+  --destructive: oklch(0.46 0.245 27.325);
+  --border: oklch(0.922 0.004 292);
+  --input: oklch(0.922 0.004 292);
+  --ring: oklch(0.7 0.05 293);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --radius: 0.625rem;
+  /* Workspace sidebar: light gray field, soft-lavender active state, purple active text/icon — never saturated */
+  --sidebar: oklch(0.985 0.002 292);
+  --sidebar-foreground: oklch(0.2 0.01 292);
+  --sidebar-primary: oklch(0.48 0.14 293);
+  --sidebar-primary-foreground: oklch(0.98 0.005 292);
+  --sidebar-accent: oklch(0.94 0.025 296);
+  --sidebar-accent-foreground: oklch(0.42 0.14 293);
+  --sidebar-border: oklch(0.922 0.004 292);
+  --sidebar-ring: oklch(0.7 0.05 293);
+}
+
+.dark {
+  --background: oklch(0.16 0.006 292);
+  --foreground: oklch(0.96 0.004 292);
+  --card: oklch(0.21 0.007 292);
+  --card-foreground: oklch(0.96 0.004 292);
+  --popover: oklch(0.21 0.007 292);
+  --popover-foreground: oklch(0.96 0.004 292);
+  --primary: oklch(0.8 0.1 293);
+  --primary-foreground: oklch(0.18 0.02 293);
+  --secondary: oklch(0.27 0.01 292);
+  --secondary-foreground: oklch(0.96 0.004 292);
+  --muted: oklch(0.27 0.01 292);
+  --muted-foreground: oklch(0.708 0.01 292);
+  --accent: oklch(0.3 0.04 293);
+  --accent-foreground: oklch(0.88 0.06 293);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0.03 293);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.19 0.008 292);
+  --sidebar-foreground: oklch(0.96 0.004 292);
+  --sidebar-primary: oklch(0.8 0.1 293);
+  --sidebar-primary-foreground: oklch(0.18 0.02 293);
+  --sidebar-accent: oklch(0.3 0.04 293);
+  --sidebar-accent-foreground: oklch(0.88 0.06 293);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0.03 293);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+/* Reduced motion — 11 UX System/accessibility-performance-standards.md:
+   "Every interaction must be usable with... reduced motion preferences."
+   Root-caused at the global layer (not per-component) so every current and
+   future animation/transition/scroll — Base UI dialog/sheet/popover
+   open-close, skeleton `animate-pulse`, hover/focus transitions, dnd-kit
+   drag motion, smooth-scroll — respects the OS-level setting automatically. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
